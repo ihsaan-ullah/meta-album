@@ -29,7 +29,7 @@ On this page, you can find the code that we used for all few-shot learning exper
 The following people have enabled the creation of the ***Meta-Album*** benchmark:
 - [Ihsan Ullah](https://github.com/ihsanullah2131)
 - [Phan Anh Vu](https://github.com/phanav)
-- [Haozhe Sun](https://www.lri.fr/membre_en.php?mb=2863)
+- [Haozhe Sun](https://github.com/SunHaozhe)
 - [Mike Huisman](https://www.universiteitleiden.nl/en/staffmembers/mike-huisman)
 - [Felix Mohr](https://github.com/fmohr)
 - [Jan N. van Rijn](https://www.universiteitleiden.nl/en/staffmembers/jan-van-rijn)
