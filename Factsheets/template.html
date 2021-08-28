@@ -1,0 +1,194 @@
+<html>
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding:5;
+            font-family: sans-serif;
+        }
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .center-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
+        .bottom-30{
+            margin-bottom: 30px;
+        }
+        .bottom-20{
+            margin-bottom: 20px;
+        }
+        table, td, th {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        td, th{
+            padding: 10px;
+        }
+        .page-break{
+            display:block; clear:both; page-break-after:always;
+        }
+    </style>
+</head>
+    
+    
+  <body>
+      
+    <!--    Title    -->
+    <div class='bottom-30'>
+        <h1> {{title}} </h1>
+    </div>
+     
+     
+    <!--    Statistics    -->
+    <div class='bottom-30 '>
+        <h2>Overall Statistics</h2>
+        <p>Average AUC: {{average_AUC}}</p>
+        <p>Total Super Categories: {{total_super_categories}}</p>
+        <p>Total Categories: {{total_categories}}</p>
+        <p>Categories randomly combined: {{categories_combined}}</p>
+    </div>
+      
+      
+    <!--    Summary    -->
+    <div class='bottom-20'>
+        <h4>Summary</h4>
+        <table>
+            <tr> <th>Super Category</th> 
+                <th>Categories</th> 
+                <th>Average AUC</th>
+                <th>Min AUC</th> 
+                <th>Max AUC</th> 
+                <th>AUC S.D</th>  
+                <th>Error</th></tr>
+            {% for episode in episodes %}
+                <tr> 
+                    <td>{{episode['super_category']}}</td> 
+                    <td>
+                        {% for cat in episode['categories'] %}
+                            {{cat}}
+                            <br>
+                        {% endfor %}
+                    </td> 
+                    <td>{{episode['AUC']}}</td> 
+                    <td>{{episode['min_AUC']}}</td> 
+                    <td>{{episode['max_AUC']}}</td> 
+                    <td>{{episode['sd_AUC']}}</td> 
+                    <td>{{episode['standard_error']}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+      
+    <!--    Overall Histogram    -->
+    <div class='bottom-20 page-break'>
+        <h4>Overall AUC Histogram</h4>
+<!--         <img class="center-fit" src='{{over_all_auc_histogram}}'> -->
+        <img class="center-fit" src="data:image/png;base64, {{over_all_auc_histogram}}" alt="Overall AUC Histogram" />
+    </div>
+      
+      
+    <!--    Results    -->
+    <div>
+        {% for episode in episodes %}
+            <div class='bottom-30 page-break'>
+                <h2>Super-Category {{episode['super_category']}}</h2>
+                
+                
+                <!--    Statistics Table    -->
+                <div class='bottom-20'>
+                    <h4>Statistics</h4>
+                    <table>
+                        <tr> <td>Total Images</td> <td>{{episode['total_images']}}</td> </tr>
+                        <tr> <td>Train Images</td> <td>{{episode['train_images']}}</td> </tr>
+                        <tr> <td>Valid Images</td> <td>{{episode['valid_images']}}</td> </tr>
+                        <tr> <td colspan="3"></td> </tr>
+                        <tr> <td>Training Time</td> <td>{{episode['training_time']}}</td> </tr>
+                        <tr> <td>Best Train Accuracy</td> <td>{{episode['best_train_acc']}}</td> </tr>
+                        <tr> <td>Best Valid Accuracy</td> <td>{{episode['best_valid_acc']}}</td> </tr>
+                        <tr> <td colspan="3"></td> </tr>
+                        <tr> <td>AUC</td> <td>{{episode['AUC']}}</td> </tr>
+                        <tr> <td>2*AUC-1</td> <td>{{episode['2*AUC-1']}}</td> </tr>
+                        <tr> <td>Standard Error</td> <td>{{episode['standard_error']}}</td> </tr>
+                    </table>
+                </div>
+                
+                
+                <!--    Categoris Table    -->
+                <div class='bottom-20'>
+                    <h4>Categories</h4>
+                    <table>
+                        <tr> <th>Category #</th> <th>Category Name</th></tr>
+                        {% for category in episode['categories'] %}
+                            <tr> <td>{{loop.index0}}</td> <td>{{category}}</td></tr>
+                        {% endfor %}
+                    </table>
+                </div>
+    
+                
+                <!--    Accuracy Loss    -->
+                <div class='bottom-20'>
+                    <h4>Accuracy Loss Plot</h4>
+<!--                     <img class="center-fit" src='{{episode["accuracy_loss_plot"]}}'> -->
+                    <img class="center-fit" src="data:image/png;base64, {{episode['accuracy_loss_plot']}}" alt="Accuracy Loss Plot" />
+                    
+                </div>
+                
+                <!--    Confusion Matrix    -->
+                <div class='bottom-20'>
+                    <h4>Confusion Matrix</h4>
+<!--                     <img class="center-fit" src='{{episode["confusion_matrix_plot"]}}'> -->
+                    <img class="center-fit" src="data:image/png;base64, {{episode['confusion_matrix_plot']}}" alt="Confusion Matrix" />
+                </div>
+                
+                <!--    AUC    -->
+                <div class='bottom-20'>
+                    <h4>AUC</h4>
+<!--                     <img class="center-fit" src='{{episode["auc_plot"]}}'> -->
+                    <img class="center-fit" src="data:image/png;base64, {{episode['auc_plot']}}" alt="AUC" />
+                </div>
+                
+                <!--    AUC Histogram    -->
+                <div class='bottom-20'>
+                    <h4>AUC Histogram</h4>
+<!--                     <img class="center-fit" src='{{episode["auc_histogram_plot"]}}'> -->
+                    <img class="center-fit" src="data:image/png;base64, {{episode['auc_histogram_plot']}}" alt="AUC Histogram" />
+                </div>
+                
+                <!--    ROC Curves    -->
+                <div class='bottom-20'>
+                    <h4>ROC Curves</h4>
+<!--                     <img class="center-fit" src='{{episode["roc_curves_plot"]}}'> -->
+                    <img class="center-fit" src="data:image/png;base64, {{episode['roc_curves_plot']}}" alt="ROC Curves" />
+                </div>
+                
+                
+                <!--    Sample Images    -->
+                <div class='bottom-20'>
+                    <h4>Sample Images</h4>
+<!--                     <img class="center-fit" src='{{episode["sample_images"]}}'> -->
+                    <img class="center-fit" src="data:image/png;base64, {{episode['sample_images']}}" alt="Sample Images" />
+                </div>
+                
+                <!--    Wrongly Classified Images   -->
+                <div class='bottom-20'>
+                    <h4>Wrongly Classified Images</h4>
+<!--                     <img class="center-fit" src='{{episode["wrongly_classified_images"]}}'> -->
+                    <img class="center-fit" src="data:image/png;base64, {{episode['wrongly_classified_images']}}" alt="Wrongly Classified Images" />
+                </div>
+                        
+            </div>
+        {% endfor %}
+        <!--    End Loop    -->
+        
+    </div>
+    <!--    End Results    -->
+      
+      
+     
+     
+  </body>
+</html>

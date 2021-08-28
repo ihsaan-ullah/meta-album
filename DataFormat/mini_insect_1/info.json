@@ -1,0 +1,14 @@
+{
+    "dataset_name" : "mini_insect_1",
+    "dataset_description" : "mini insect example dataset # 1",
+    "total_categories" : 4,
+    "total_super_categorie" : 1,
+    "uniform_number_of_images_per_category" : true, 
+    "images_per_category" : 3,
+    "has_super_categories" : true,
+    "image_column_name" : "FILE_NAME",
+    "category_column_name" : "CATEGORY",
+    "super_category_column_name" : "SUPER_CATEGORY",
+    "images_in_sub_folder" : false,
+    "csv_with_tab" : false
+}
