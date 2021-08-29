@@ -48,13 +48,12 @@ It should have some information about the dataset
 <br>
 
 It is recommended to use the above mentioned column names but ofcourse you can use different names. Change the names of cloumns in `info.json` file to adjust it according to your dataset.  
-The Preliminary report generator and other related scripts will be updated to give you the freedom of keeping your own column names.
+The Factsheeet generator and other related scripts will be updated to give you the freedom of keeping your own column names.
 
 <br>
 <br>
 
 ### Examples of insects dataset is given below:
-***With sub images folder***
 ```
 insects/
 ├── labels.csv
@@ -63,18 +62,6 @@ insects/
 ├──── insect1.jpg
 ├──── insect2.jpg
 ├──── insect3.jpg
-```
-
-<br>
-
-***Without sub images folder***
-```
-insects/
-├── labels.csv
-├── info.json
-├── insect1.jpg
-├── insect2.jpg
-├── insect3.jpg
 ```
 
 
@@ -128,9 +115,8 @@ insect3.jpg,    butterfly,  NAN
 # Sample Datasets
 You will find three sample dataset in this repository
 
-1. `mini_insect_1` : mini dataset with *Super Categories* and images in the parent directory
-2. `mini_insect_2` : mini dataset without *Super Categories* and images in the parent directory
-3. `mini_insect_3` : mini dataset with *Super Categories* and images in a sub folder (`images`) in the parent directory
+1. `mini_insect_1` : mini dataset with *Super Categories*
+2. `mini_insect_2` : mini dataset without *Super Categories*
 
 
 <br>
@@ -138,7 +124,7 @@ You will find three sample dataset in this repository
 
 
 # Check Data Format
-To check if your dataset is correctly formatted before running the **Preliminary Report Script**, use the python script `check_data_format.py`.
+To check if your dataset is correctly formatted before running the **Factsheet Script**, use the python script `check_data_format.py`.
 
 You can run the script in the following way 
 
