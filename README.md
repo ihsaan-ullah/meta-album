@@ -14,7 +14,7 @@ Here, you can find information about the 10 public datasets used in Meta-Album.
 ## 3.   [Data Format](DataFormat/)
 This page covers the uniform data format for all datasets
 
-## 4.   [Fact Sheets](FactSheets/)
+## 4.   [Factsheets](Factsheets/)
 This page contains the code used to generate fact sheets (PDFs containing information about a given dataset)
 
 ## 5.   [Tabular Data Generator](GenerateTabularData/)
