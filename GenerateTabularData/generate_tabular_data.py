@@ -419,16 +419,15 @@ def make_dataset(data_set, batch_size=64, shuffle=False):
 # Model
 #=================================================
 
-def getModel():
+def getModel(output_features=32,only_train_last_layer=True):
     model = models.resnet18(pretrained=True)
-    model = nn.Sequential(*list(model.children())[:-1])
-    model.fc = nn.Sequential(nn.Flatten())
-    
-    for name, param in model.named_parameters():
-        if name.startswith("layer4.1"):
-            param.requires_grad = True
-        else:
+
+    if only_train_last_layer:
+        for param in model.parameters():
             param.requires_grad = False
+        
+    num_ftrs = model.fc.in_features
+    model.fc = nn.Linear(num_ftrs, output_features)
     return model.to(device)
 
 
@@ -520,10 +519,10 @@ def get_predictions(model, dataloaders, dataset_sizes):
     # Iterate over data.
     for inputs, labels in dataloaders['train']:
         inputs = inputs.to(device)
-        outputs = model(inputs)
+        outputs = model(inputs).detach().numpy()
         all_outputs.append(outputs)
 
-    return np.vstack(all_outputs)     
+    return np.vstack(all_outputs)       
 
 
 
