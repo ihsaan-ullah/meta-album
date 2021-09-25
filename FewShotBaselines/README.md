@@ -35,7 +35,7 @@ You can use the commands below (when you are in ./meta-album) to run experiments
 ```python -u main.py --problem <DATASET> --k <NUM_SHOTS> --backbone resnet18 --N 5 --k_test 16 --validate --val_after 2500 --model finetuning --runs 3```
   
 ### MAML 
-python -u main.py --problem <DATASET> --k <NUM_SHOTS> --model maml --backbone resnet18 --k_test 16 --N 5 --model maml --val_after 2500 --lr 0.001 --T 5 --meta_batch_size 2 --runs 3 --validate
+```python -u main.py --problem <DATASET> --k <NUM_SHOTS> --model maml --backbone resnet18 --k_test 16 --N 5 --model maml --val_after 2500 --lr 0.001 --T 5 --meta_batch_size 2 --runs 3 --validate```
 
 ### Matching Networks
 ```python -u main.py --problem <DATASET> --model matchingnet --k <NUM_SHOTS> --backbone resnet18 --N 5 --k_test 16 --val_after 2500 --validate --runs 3```
