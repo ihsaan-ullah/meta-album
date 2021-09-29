@@ -18,6 +18,11 @@ Meta-Album datasets come from 5 domains, each with 2 publid datasets:
 
 All the public datasets will be released after the [NeurIPS MetaDL Challenge 2021](https://autodl.lri.fr/competitions/210). 
 
+<br><br>
+
+#### Note 
+All the datasets with formatted and raw images will be provided here.
+
 
 
 
