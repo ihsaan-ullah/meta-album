@@ -20,7 +20,7 @@ All the public datasets will be released after the [NeurIPS MetaDL Challenge 202
 
 <br><br>
 
-#### Note 
+### Note 
 All the datasets with formatted and raw images will be provided here.
 
 
