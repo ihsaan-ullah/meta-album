@@ -1,7 +1,7 @@
 # Add Benchmark Dataset to Meta-Album
 
 To contribute a dataset to the Meta-Album benchmark, check the guidelines for dataset preparation and the reviewing criteria.  
-*We encourage donors to first check examples of previously donated datasets and to DIVERSIFY THE APPLICATION DOMAINS*
+*We encourage donors to first check examples of previously donated datasets and to* ***DIVERSIFY THE APPLICATION DOMAINS***
 
 <br><br>
 
