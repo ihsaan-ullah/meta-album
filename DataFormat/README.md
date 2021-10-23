@@ -1,5 +1,3 @@
-### Shortcut
-
 # Important Instructions for the processed version of dataset:
 the dataset should be in the following format:
 
