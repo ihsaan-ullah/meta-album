@@ -1,9 +1,4 @@
 ### Shortcut
-The following script automatically realizes all steps required to prepare the files required in the pre-processing step:
-
-https://github.com/ihsanullah2131/metadl_contrib/blob/master/PreProcessing/data-preparation.ipynb
-
-Read remainder only for details.
 
 # Important Instructions for the processed version of dataset:
 the dataset should be in the following format:
