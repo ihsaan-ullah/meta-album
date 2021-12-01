@@ -27,7 +27,7 @@ args = parser.parse_args()
 #----------------------------
 # Create Output Directory
 #----------------------------
-output_dir = os.path.join('./', 'report_files')
+output_dir = os.path.join(args.output_dir, 'report_files')
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
