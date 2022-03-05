@@ -24,17 +24,17 @@ You can choose different column names, then specify them in info.json.
 ### `info.json`
 It should have some information about the dataset  
 - dataset_name (string)
-- dataset_description
+- dataset_description (string)
 - total_categories (integer)
 - total_super_categorie (integer)
 - uniform_number_of_images_per_category (boolean)
-- images_per_category (integer)
+- minimum_images_per_category (integer)
+- median_images_per_category (float)
+- maximum_images_per_category (integer)
 - has_super_categories (boolean)
 - image_column_name (string)
 - category_column_name (string)
-- super_category_column_name (string)
-- images_in_sub_folder (boolean)
-- csv_with_tab (boolean)  
+- super_category_column_name (string) 
 
 (see example datasets)
 
@@ -91,13 +91,13 @@ insect3.jpg,    butterfly,  NAN
     "total_categories" : 4,
     "total_super_categorie" : 1,
     "uniform_number_of_images_per_category" : true, 
-    "images_per_category" : 3,
+    "minimum_images_per_category" : 3,
+    "median_images_per_category" : 3.0,
+    "maximum_images_per_category" : 3,
     "has_super_categories" : true,
     "image_column_name" : "FILE_NAME",
     "category_column_name" : "CATEGORY",
     "super_category_column_name" : "SUPER_CATEGORY",
-    "images_in_sub_folder" : false,
-    "csv_with_tab": false
 }
 ```
 
