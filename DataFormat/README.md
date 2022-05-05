@@ -14,9 +14,9 @@ It should have at least these 3 columns:
 - CATEGORY
 - SUPER_CATEGORY  
 
-(see example datasets)
+***(see example datasets)***
 
-You can choose different column names, then specify them in info.json.
+If you choose different column names, specify them in info.json.
 
 <br>
 <br>
@@ -38,15 +38,11 @@ It should have some information about the dataset
 
 ***(see example datasets)***
 
-<br>
-
-It is recommended to use the above mentioned column names but ofcourse you can use different names. Change the names of cloumns in `info.json` file to adjust it according to your dataset.  
-The Factsheeet generator and other related scripts will be updated to give you the freedom of keeping your own column names.
 
 <br>
 <br>
 
-### Examples of insects dataset is given below:
+### Example of sample insects dataset is given below:
 ```
 insects/
 ├── labels.csv
@@ -61,7 +57,7 @@ insects/
 <br>
 <br>
 
-### Examples of labels.csv files for insects dataset:
+### Examples of `labels.csv` files for sample insects dataset:
 ***With predefined super-category***
 
 ```
@@ -82,7 +78,7 @@ insect3.jpg,    butterfly,  NAN
 <br>
 <br>
 
-### Examples of info.json file for insects dataset:
+### Examples of `info.json` file for sample insects dataset:
 
 ```json
 {
