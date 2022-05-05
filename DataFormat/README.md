@@ -23,20 +23,20 @@ You can choose different column names, then specify them in info.json.
 
 ### `info.json`
 It should have some information about the dataset  
-- dataset_name (string)
-- dataset_description (string)
-- total_categories (integer)
-- total_super_categorie (integer)
-- uniform_number_of_images_per_category (boolean)
-- minimum_images_per_category (integer)
-- median_images_per_category (float)
-- maximum_images_per_category (integer)
-- has_super_categories (boolean)
-- image_column_name (string)
-- category_column_name (string)
-- super_category_column_name (string) 
+- dataset_name `string`
+- dataset_description `string`
+- total_categories `integer`
+- total_super_categorie `integer`
+- uniform_number_of_images_per_category `boolean`
+- minimum_images_per_category `integer`
+- median_images_per_category `float`
+- maximum_images_per_category `integer`
+- has_super_categories `boolean`
+- image_column_name `string`
+- category_column_name `string`
+- super_category_column_name `string` 
 
-(see example datasets)
+***(see example datasets)***
 
 <br>
 
