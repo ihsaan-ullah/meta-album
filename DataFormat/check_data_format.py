@@ -80,10 +80,7 @@ info = json.loads(f.read())
 #--------------------------------
 # Read CSV
 #--------------------------------
-if info["csv_with_tab"]:
-    data = pd.read_csv(csv_path, sep="\t", encoding="utf-8") 
-else:
-    data = pd.read_csv(csv_path) 
+data = pd.read_csv(csv_path)
 
 
 
@@ -113,10 +110,9 @@ if info["has_super_categories"]:
 
 
 #Image Folder
-if info["images_in_sub_folder"]:
-    image_path = os.path.join(dataset_path,"images")
-    if not os.path.exists(image_path):
-        err.DirectoryError(image_path)
+image_path = os.path.join(dataset_path,"images")
+if not os.path.exists(image_path):
+    err.DirectoryError(image_path)
 
 print("###-------------------------------------###")
 print("[+] Your dataset is in perfect format!")
