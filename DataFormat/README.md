@@ -2,7 +2,7 @@
 the dataset should be in the following format:
 
 1. A parent directory with your dataset name which consists of the files `labels.csv` and `info.json`
-2. preprocessed images (128x128) in either the same parent directory or in a folder named `images` inside the parent directory
+2. preprocessed images (128x128) in a folder named `images` inside the parent directory
 
 <br>
 <br>
