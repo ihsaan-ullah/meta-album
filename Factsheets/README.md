@@ -1,6 +1,5 @@
 # Factsheets
-Repository for generating Factsheets from dataset exploration for MetaDL Competition 2021
-
+Repository for generating Factsheets.
 
 <br>
 
