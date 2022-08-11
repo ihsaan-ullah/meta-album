@@ -25,8 +25,8 @@ This page covers the uniform data format for all datasets.
 ## 4.   [Factsheets](Factsheets/)
 This page contains the code used to generate fact sheets (PDFs containing information about a given dataset)
 
-## 6.   [Few-Shot Baselines](FewShotBaselines/)
-On this page, you can find the code that we used for all few-shot learning experiments in the paper. 
+## 6.   [Code](Code/)
+On this page, you can find the code that we used for all few-shot learning and other experiments in the paper. 
 
 
 <br><br>
