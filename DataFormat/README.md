@@ -26,7 +26,7 @@ It should have some information about the dataset
 - dataset_name `string`
 - dataset_description `string`
 - total_categories `integer`
-- total_super_categorie `integer`
+- total_super_categories `integer`
 - uniform_number_of_images_per_category `boolean`
 - minimum_images_per_category `integer`
 - median_images_per_category `float`
@@ -85,7 +85,7 @@ insect3.jpg,    butterfly,  NAN
     "dataset_name" : "mini_insect_1",
     "dataset_description" : "mini insect example dataset # 1",
     "total_categories" : 4,
-    "total_super_categorie" : 1,
+    "total_super_categories" : 1,
     "uniform_number_of_images_per_category" : true, 
     "minimum_images_per_category" : 3,
     "median_images_per_category" : 3.0,
