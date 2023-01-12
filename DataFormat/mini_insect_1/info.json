@@ -2,7 +2,7 @@
     "dataset_name" : "mini_insect_1",
     "dataset_description" : "mini insect example dataset # 1",
     "total_categories" : 4,
-    "total_super_categorie" : 1,
+    "total_super_categories" : 1,
     "uniform_number_of_images_per_category" : true, 
     "minimum_images_per_category" : 3,
     "median_images_per_category" : 3,
