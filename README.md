@@ -1,6 +1,6 @@
 ![Meta-Album cover image](Github-cover.png)
 
-## [https://meta-album.github.io/](https://meta-album.github.io/)
+## Meta-Album Website: [https://meta-album.github.io/](https://meta-album.github.io/)
 
 This is the official repository for **Meta-Album**, an image classification meta-dataset designed to facilitate few-shot learning, transfer learning, meta-learning, among other tasks. It includes 40 open datasets, each having at least 20 classes with 40 examples per class, with verified licences. They stem from diverse domains, such as ecology (fauna and flora), manufacturing (textures, vehicles), human actions, and optical character recognition, featuring various image scales (microscopic, human scales, remote sensing). All datasets are preprocessed, annotated, and formatted uniformly, and come in 3 versions (Micro ⇢ Mini ⇢ Extended) to match users’ computational resources. We showcase the utility of the first 30 datasets (to be released for NeurIPS 2022) on few-shot learning problems. The other 10 will be released shortly after. Meta-Album is already more diverse and larger (in number of datasets) than similar efforts, and we are committed to keep enlarging it via a series of meta-learning competitions. As competitions terminate, their test data are released, thus creating a rolling benchmark, available through [OpenML](https://openml.org/). Our website https://meta-album.github.io/ contains the source code of challenge winning methods, baseline methods, data loaders, and instructions for contributing either new datasets or algorithms to our expandable meta-dataset.
 
@@ -30,6 +30,25 @@ On this page, you can find the code that we used for all few-shot learning and o
 
 
 <br><br>
+
+### Meta-Album Paper 
+You can read Meta-Album Paper from [Here](https://meta-album.github.io/paper/Meta-Album.pdf)
+
+<br><br>
+
+### Cite Meta-Album 
+```
+@inproceedings{meta-album-2022,
+    title={Meta-Album: Multi-domain Meta-Dataset for Few-Shot Image Classification},
+    author={Ullah, Ihsan and Carrion, Dustin and Escalera, Sergio and Guyon, Isabelle M and Huisman, Mike and Mohr, Felix and van Rijn, Jan N and Sun, Haozhe and Vanschoren, Joaquin and Vu, Phan Anh},
+    booktitle={Thirty-sixth Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
+    url = {https://meta-album.github.io/},
+    year = {2022}
+}
+```
+
+<br><br>
+
 ### Meta-Album Authors
 
 - [Ihsan Ullah](https://ihsaan-ullah.github.io/)
@@ -45,6 +64,7 @@ On this page, you can find the code that we used for all few-shot learning and o
 
 
 <br><br>
+
 ### Contributors
 - Philip Boser
 - Maria Belen Guaranda Cabezas
@@ -67,5 +87,6 @@ On this page, you can find the code that we used for all few-shot learning and o
 
 
 <br><br>
+
 ### Contact: 
 meta-album@chalearn.org
